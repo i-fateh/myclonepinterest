@@ -1,0 +1,323 @@
+/* MESSAGE AUX RECRUTEURS :)
+    Ce code a été ecris il y a déja quelques années
+    Je le laisse dans l'état afin de garder une trace de mes progrès
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw; height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mosaic {
+    width: 90vw;
+    margin: 10px auto;
+    columns: 5;
+    column-gap: 10px;
+    padding-top: 70px;
+    margin-top: 30px;
+    padding-bottom: 150px;
+  }
+
+  .card {
+    width: 16vw;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+  }
+
+  .card:hover {
+    background: rgb(237, 237, 237);
+    transition-property: 0.4s ease-out;
+    transition-duration: 0.4s;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .card .bloc-logo {
+      visibility: visible !important;
+      height: 40px;
+      width: 90%;
+      z-index: 99;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 99 !important;
+      margin-top: -60px;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+
+  .card:hover .bloc-logo {
+      visibility: visible;
+      width: 90%;
+      height: 40px;
+      z-index: 99;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 99 !important;
+      position: relative;
+  }
+
+
+  .card:hover a {
+    visibility: visible;
+  }
+
+  .card .logo {
+      visibility: hidden;
+      border-radius: 50%;
+      display: inline;
+      border: 3px solid white;
+  }
+
+  .card:hover .logo {
+      visibility: visible;
+      width: 40px;
+      height: 40px;
+  }
+  
+  a {
+      visibility: hidden;
+      text-decoration: none;
+      margin: 0 0 0 0;
+      font-size: 2em;
+      color: white;
+  }
+  .a-title {
+      text-decoration: none;
+      margin: 0 0 0 0;
+      font-size: 1.5em;
+      color: black;
+  }
+
+  header {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 68px;
+    margin-top: -5px;
+    position: fixed;
+    background: white;
+  }
+  header nav {
+      color: #ffffff;
+      font-size: 1em;
+      width: 100vw;
+      padding-left: 10px;
+  }
+
+nav a {
+    float: right;
+    display: block;
+    color: rgb(154, 154, 154);
+    text-align: center;
+    padding: 4px 16px 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 65px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.logo-site {
+    float: left;
+    margin: 20px;
+    width: 33px;
+    height: 33px;
+}
+
+.logo-head{
+    width: 35px;
+    height: 35px;
+    margin: 18px 0px 20px 0px;
+    border-radius: 50%;
+    float: left;
+}
+
+input[type=text], select {
+    width: 800px;
+    padding: 10px 10px;
+    margin: 17px 0;
+    font-size:1em;
+    font-weight: 700;
+    display: inline-block;
+    background: rgb(237, 237, 237);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: gray;
+    border: none;
+}
+input:focus {
+    outline: none !important;
+    border: 2px solid rgb(33, 133, 255);
+    box-shadow: 0 0 5px #719ECE;
+}
+
+.blocnav {
+    float: right;
+    margin-right: 80px;
+}
+.leftSide {
+   float: left;
+   margin-left: 50px; 
+}
+
+.has-search .form-control {
+padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+position: absolute;
+z-index: 99;
+display: inline-block;
+width: 5rem;
+height: 5rem;
+line-height: 4.8rem;
+margin-left: -20px;
+text-align: center;
+pointer-events: none;
+color: #aaa;
+}
+
+.headicon {
+color: gray;
+width: 27px;
+margin: 22px 17px 25px 17px;
+float: left;
+}
+
+.video {
+border-radius: 8px;
+width: 100%;
+}
+
+@media (max-width: 1200px) {
+
+  .mosaic {
+    columns: 4;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+  width: 20vw;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 10px 20px 10px;
+  border-radius: 8px;
+  }
+
+  .card:hover .logo {
+    visibility: visible;
+    width: 30px;
+    height: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    margin: 0 0 0 0;
+    font-size: 1.4em;
+    color: white;
+  }
+}
+
+@media (max-width: 900px) {
+  input[type=text], select {
+  width: 500px;
+  }
+
+  .mosaic {
+    width: 100%;
+    columns: 3;
+    column-gap: 10px;
+    padding-top: 0px;
+    margin-top: 50px;
+}
+
+  .card {
+  width: 28vw;
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 10px 20px 10px;
+  border-radius: 8px;
+  }
+
+  .card:hover .logo {
+    visibility: visible;
+    width: 30px;
+    height: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    margin: 0 0 0 0;
+    font-size: 1.4em;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  input[type=text], select {
+  width: 500px;
+  }
+  .mosaic {
+    columns: 2;
+    column-gap: 10px;
+    padding-top: 60px;
+  }
+
+  .card {
+    width: 43vw;
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+    border-radius: 8px;
+  }
+  .card img {width: 100%;}
+}
+
+@media (max-width: 480px) {
+  input[type=text], select {
+  width: 500px;
+  }
+  .mosaic {
+    columns: 1;  width: 90vw;
+  }
+
+.card {
+  width: 85vw;
+  padding: 0px;
+  margin: 10px;
+  border-radius: 8px; text-align: center;
+}
+
+.card img {
+  margin: 20px 0px;
+  width: 100%;
+}
+
+.card:hover .logo {
+  visibility: visible;
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  margin: 0 0 0 0;
+  font-size: 1em;
+  color: white;
+}
+}
